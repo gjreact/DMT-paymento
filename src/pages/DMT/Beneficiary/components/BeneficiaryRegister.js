@@ -1,5 +1,6 @@
 import React from "react";
-import { Col, Row, Table } from "react-bootstrap";
+import { Col, Row, Tab, Table, Tabs } from "react-bootstrap";
+import { Java, Node, Php, Python, Shell } from "./subcomponents/BeneficiaryRegisterCode";
 
 function BeneficiaryRegister() {
   return (
@@ -71,29 +72,23 @@ function BeneficiaryRegister() {
               </tbody>
             </Table>
           </span>
-        </Row>
-      </Col>
-      <Col
-        id="style-1"
-        className="col-12 col-sm-6 zindex scrollbar bg-dark">
-        <Row className="codebg">
-          <h3 className="text-white codehead p-3">URL:</h3>
-          <code className="text-white pt-5 pb-5">
+          <h4 className="text-secondary">URL:</h4>
+          <code className="text-info">
             http://194.195.113.218:8090/paymento/beneficiary-reg/add-beneficiary
           </code>
-          <h3 className="text-white p-3">Method:</h3>
-          <p className="text-white p-3">POST</p>
+          <h5 className="text-secondary">Method:</h5>
+          <p className="text-secondary">POST</p>
 
-          <h3 className="text-white  p-3">Header:</h3>
-          <p className="output text-white ">
+          <h4 className="text-secondary">Header:</h4>
+          <p className="output">
             <br /> <code>"apiKey"</code>
             <span>:</span>
             "abs1nxxxxx"
             <br />
           </p>
 
-          <h3 className="text-white  p-3 p-3">Request:</h3>
-          <p className="output  text-white ">
+          <h4 className="text-secondary">Request:</h4>
+          <p className="output">
             <br />
             <code>"beneficiaryName"</code> <span>: </span>
             <code className="code-yellow">"anu",</code>
@@ -123,22 +118,18 @@ function BeneficiaryRegister() {
             <code className="code-yellow">Mavoor Road</code> <br />
           </p>
 
-          <h3 className="text-white  p-3">Response:</h3>
-          <h5 className="text-white">If Remitter Exist :</h5>
-          <p className="output  text-white ">
-            <br /> <code>"status"</code> <span>: </span>
-            <code className="code-cyan">"201"</code>
-            <br /> <code>"success"</code> <span>: </span>
-            <code className="code-cyan">"true"</code>
-            <br /> <code>"message"</code> <span>: </span>
-            <code className="code-yellow">
-              "Beneficiary Saved successfully"
-            </code>
-            <br /> <code>"responseCode"</code> <span>: </span>
-            <code className="code-cyan">1</code>
-            <br />
-          </p>
         </Row>
+      </Col>
+      <Col className="col-12 col-sm-6 sideMenuColor ">
+        <Row id="style-1" className="border border-2 rounded-3">
+        <Tabs defaultActiveKey="python" className="tab ">
+          <Tab eventKey="python" title="python"><Python /></Tab>
+          <Tab eventKey="java" title="java"><Java /></Tab>
+          <Tab eventKey="shell" title="shell"><Shell /></Tab>
+          <Tab eventKey="node" title="node"><Node /></Tab>
+          <Tab eventKey="php" title="php"><Php /></Tab>
+        </Tabs>
+      </Row>
       </Col>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Table, Tab, Tabs } from "react-bootstrap";
 import Bar from "../../../SideBar/Bar";
-import VerifyOtpCode, { Java, Node, Php, Python, Shell } from "./subcomponents/VerifyOtpCode";
+import  { Java, Node, Php, Python, Shell } from "./subcomponents/VerifyOtpCode";
 
 function VerifyOtpPage() {
   return (

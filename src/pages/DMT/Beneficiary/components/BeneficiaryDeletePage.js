@@ -1,6 +1,7 @@
 import React from "react";
-import { Col, Row, Table } from "react-bootstrap";
+import { Col, Row, Tab, Table, Tabs } from "react-bootstrap";
 import Bar from "../../../SideBar/Bar";
+import { Java, Node, Php, Python, Shell } from "./subcomponents/BeneficiaryDeleteCode";
 
 function BeneficiaryDeletePage() {
   return (
@@ -35,47 +36,16 @@ function BeneficiaryDeletePage() {
           </span>
         </Row>
       </Col>
-      <Col
-        id="style-1"
-        className="col-12 col-sm-6 zindex scrollbar bg-dark maxheight500"
-      >
-        <Row className="codebg">
-          <h3 className="text-white codehed p-3">URL:</h3>
-          <code className="text-white pt-5 pb-5">
-            http://194.195.113.218:8090/paymento/remitter-reg/delete-beneficiary
-          </code>
-          <h3 className="text-white p-3">Method:</h3>
-          <p className="text-white p-3">POST</p>
-
-          <h3 className="text-white p-3">Header:</h3>
-          <p className="output text-white ">
-            <br /> <code>"apiKey"</code>
-            <span>:</span>
-            <code className="code-yellow">"abs1nxxxxx"</code>
-            <br />
-          </p>
-
-          <h3 className="text-white p-3">Request:</h3>
-          <p className="output  text-white ">
-            <br /> <code>"remitterPhone"</code>
-            <span>:</span>
-            <code className="code-cyan"> "7902626443"</code>
-            <br />
-          </p>
-
-          <h3 className="text-white link-section p-3">Response:</h3>
-          <p className="output text-white ">
-            <br /> <code>"status"</code> <span>: </span>
-            <code className="code-cyan">"200"</code>
-            <br /> <code>"success"</code> <span>: </span>
-            <code className="code-cyan">"true"</code>
-            <br /> <code>"message" </code>
-            <span>: </span> <code className="">"Beneficiary Deleted"</code>
-            <br /> <code>"responseCode"</code> <span>: </span>
-            <code className="code-cyan">1</code>
-            <br />
-          </p>
-        </Row>
+      <Col className="col-12 col-sm-6 sideMenuColor ">
+        <Row id="style-1" className="border border-2 rounded-3">
+        <Tabs defaultActiveKey="python" className="tab ">
+          <Tab eventKey="python" title="python"><Python /></Tab>
+          <Tab eventKey="java" title="java"><Java /></Tab>
+          <Tab eventKey="shell" title="shell"><Shell /></Tab>
+          <Tab eventKey="node" title="node"><Node /></Tab>
+          <Tab eventKey="php" title="php"><Php /></Tab>
+        </Tabs>
+      </Row>
       </Col>
     </>
   );
