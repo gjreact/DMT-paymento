@@ -53,7 +53,7 @@ function ResendOtpPage() {
           </span>
         </Row>
       </Col>
-      <Col id="style-1" className="col-12 col-sm-6 zindex scrollbar bg-dark" >
+      <Col className="col-12 col-sm-6 sideMenuColor" >
       <Row id="style-1" className="border border-2 rounded-3">
         <Tabs defaultActiveKey="python" className="tab ">
           <Tab eventKey="python" title="python"><Python /></Tab>

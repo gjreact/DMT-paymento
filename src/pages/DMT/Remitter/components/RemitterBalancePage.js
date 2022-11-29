@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Table } from "react-bootstrap";
 import Bar from "../../../SideBar/Bar";
-import RemitterBalanceCode from "./subcomponents/RemitterBalanceCode";
+import { Java, Node, Php, Python, Shell } from "./subcomponents/RemitterBalanceCode";
 
 function RemitterBalancePage() {
   return (
@@ -45,11 +45,16 @@ function RemitterBalancePage() {
           </span>
         </Row>
       </Col>
-      <Col
-        id="style-1"
-        className="col-12 col-sm-6 zindex  scrollbar bg-dark"
-      >
-        <RemitterBalanceCode />
+      <Col className="col-12 col-sm-6 zindex  scrollbar bg-dark" >
+      <Row id="style-1" className="border border-2 rounded-3">
+        <Tabs defaultActiveKey="python" className="tab ">
+          <Tab eventKey="python" title="python"><Python /></Tab>
+          <Tab eventKey="java" title="java"><Java /></Tab>
+          <Tab eventKey="shell" title="shell"><Shell /></Tab>
+          <Tab eventKey="node" title="node"><Node /></Tab>
+          <Tab eventKey="node" title="node"><Php /></Tab>
+        </Tabs>
+      </Row>
       </Col>
     </>
   );

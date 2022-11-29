@@ -59,9 +59,6 @@ function RemitterInfoPage() {
       <Col  className="col-12 col-sm-6 sideMenuColor ">
         <Row id="style-1" className="border border-2 rounded-3">
         <Tabs defaultActiveKey="python" className="tab ">
-          {/* <Tab eventKey="Response" title="response" className="text-white">
-          <RemitterinfoCode />
-          </Tab> */}
           <Tab eventKey="python" title="python"><Python /></Tab>
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
