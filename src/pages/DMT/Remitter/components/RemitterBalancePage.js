@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Table } from "react-bootstrap";
+import { Row, Col, Table, Tab, Tabs } from "react-bootstrap";
 import Bar from "../../../SideBar/Bar";
 import { Java, Node, Php, Python, Shell } from "./subcomponents/RemitterBalanceCode";
 
