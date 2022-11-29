@@ -58,7 +58,7 @@ function ResendOtpPage() {
          <h3 className="text-secondary ">Method:</h3>
          <p className=" text-secondary">POST</p>
 
-         <h3 className="text-white  ">Header:</h3>
+         <h3 className="text-secondary  ">Header:</h3>
         <p className="output text-white ">
            <br /> <code>"apiKey"</code>
            <span>:</span>

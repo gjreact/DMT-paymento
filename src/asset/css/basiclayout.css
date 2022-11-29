@@ -55,6 +55,7 @@
 }
 .menuItemHeader {
   font-size: 0px;
+  color: var(--textColor);
 }
 .menuItem {
   font-size: 15px;
@@ -66,6 +67,7 @@ a {
   color: var(--textColor);
   font-family: "Gill Sans", sans-serif;
 }
+
 .zeropadding {
   padding: 0px;
 }

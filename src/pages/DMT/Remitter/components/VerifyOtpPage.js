@@ -44,6 +44,34 @@ function VerifyOtpPage() {
               </tbody>
             </Table>
           </span>
+          <h3 className="text-secondary">URL:</h3>
+        <code className="text-info ">
+          http://194.195.113.218:8090/paymento/remitter-reg/verify-otp
+        </code>
+        <h3 className="text-secondary">Method:</h3>
+        <p className="text-secondary">POST</p>
+
+        <h3 className="text-secondary">Header:</h3>
+        <p className="output ">
+          <br /> <code>"apiKey"</code>
+          <span>:</span>
+          "abs1nxxxxx"
+          <br />
+        </p>
+
+        <h3 className="text-secondary  p-3">Request:</h3>
+        <p className="output">
+          <br />
+          <code>"otp"</code> <span>: </span>
+          <code className="code-cyan"> "017111" </code> <br />
+          <code>"otpRefferenceId"</code> <span>: </span>
+          <code className="code-yellow">"URMDiiD2UQkIkkQy" </code> <br />
+          <code>"mobile"</code> <span>: </span>
+          <code className="code-cyan">"7902626443" </code> <br />
+          <code>"remitterType"</code> <span>: </span>
+          <code className="code-cyan">3 </code> <br />
+        </p>
+
         </Row>
       </Col>
       <Col className="col-12 col-sm-6 sideMenuColor " >
@@ -53,7 +81,7 @@ function VerifyOtpPage() {
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
           <Tab eventKey="node" title="node"><Node /></Tab>
-          <Tab eventKey="node" title="node"><Php /></Tab>
+          <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>
       </Col>

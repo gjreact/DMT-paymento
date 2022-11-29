@@ -63,7 +63,7 @@ function RemitterInfoPage() {
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
           <Tab eventKey="node" title="node"><Node /></Tab>
-          <Tab eventKey="node" title="node"><Php /></Tab>
+          <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>
       </Col>

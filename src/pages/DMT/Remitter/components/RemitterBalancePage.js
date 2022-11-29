@@ -43,16 +43,37 @@ function RemitterBalancePage() {
               </tbody>
             </Table>
           </span>
+          <h4 className="text-secondary">URL:</h4>
+        <code className="text-info">
+          http://194.195.113.218:8090/paymento/remitter-reg/check-balance
+        </code>
+        <h5 className="text-secondary">Method:</h5>
+        <p className="text-secondary">POST</p>
+
+        <h5 className="text-secondary">Header:</h5>
+        <p className="output">
+          <br /> <code>"apiKey"</code>
+          <span>:</span>
+          <code className="code-yellow">"abs1nxxxxx"</code>
+          <br />
+        </p>
+
+        <h4 className="text-secondary">Request:</h4>
+        <p className="output">
+          <br />
+          <code> "remitterphone"</code> <span>: </span>
+          <code className="code-cyan">"7902626443"</code> <br />
+        </p>
         </Row>
       </Col>
-      <Col className="col-12 col-sm-6 zindex  scrollbar bg-dark" >
+      <Col className="col-12 col-sm-6 sideMenuColor" >
       <Row id="style-1" className="border border-2 rounded-3">
         <Tabs defaultActiveKey="python" className="tab ">
           <Tab eventKey="python" title="python"><Python /></Tab>
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
           <Tab eventKey="node" title="node"><Node /></Tab>
-          <Tab eventKey="node" title="node"><Php /></Tab>
+          <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>
       </Col>
