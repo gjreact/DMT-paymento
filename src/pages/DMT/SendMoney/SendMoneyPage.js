@@ -1,14 +1,17 @@
-import React from 'react'
-import SendMoney from './components/SendMoney'
-import SendMoney1 from './components/SendMoney1'
+import React from "react";
+import BasicLayout from "../../../layout/BasicLayout";
+import SendMoney from "./components/SendMoney";
+import SendMoney1 from "./components/SendMoney1";
 
 function SendMoneyPage() {
   return (
     <>
-    <SendMoney />
-    <SendMoney1 />
+      <BasicLayout>
+        <SendMoney />
+        <SendMoney1 />
+      </BasicLayout>
     </>
-  )
+  );
 }
 
-export default SendMoneyPage
+export default SendMoneyPage;

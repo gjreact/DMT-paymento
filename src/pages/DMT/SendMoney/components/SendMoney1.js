@@ -1,11 +1,18 @@
 import React from "react";
-import { Col, Row, Table } from "react-bootstrap";
+import { Col, Row, Tab, Table, Tabs } from "react-bootstrap";
+import {
+  Java,
+  Php,
+  Python,
+  Sendmoney1code,
+  Shell,
+} from "./subcomponents/Sendmoney1code";
 
 function SendMoney1() {
   return (
     <>
-      <Col className="col-12 col-sm-6 maxheight700">
-        <Row id="sendmoney1">
+      <Col className="col-12 col-sm-6">
+        <Row>
           <h2 className="mb-0 mt-0 heading2">Send Money</h2>
           <p className="px-4  mb-0 backroundP-tag">
             When you are in an UAT Environment try this account numbers for
@@ -58,20 +65,12 @@ function SendMoney1() {
               </tbody>
             </Table>
           </span>
-        </Row>
-      </Col>
-      <Col
-        id="style-1"
-        className="col-12 col-sm-6 zindex bg-dark scrollbar maxheight700"
-        style={{ maxHeight: "744px" }}
-      >
-        <Row className="codebg">
-          <h3 className="text-white codehead p-3">URL:</h3>
-          <code className="text-white pt-5 pb-5 ">
+          <h3 className="text-secondary p-3">URL:</h3>
+          <code className="text-info">
             http://194.195.113.218:8090/paymento/sendmoney-api/api-send-money
           </code>
 
-          <h3 className="text-white p-3">Request:</h3>
+          <h3 className="text-secondary p-3">Request:</h3>
           <p className="output  text-white ">
             <br /> <code>"beneficiaryId"</code> <span>: </span>
             <code className="code-cyan">36</code>
@@ -82,96 +81,34 @@ function SendMoney1() {
             <br />
           </p>
 
-          <h3 className="text-white  p-3">Header:</h3>
+          <h3 className="text-secondary  p-3">Header:</h3>
           <p className="output  text-white ">
             <br /> <code>"apiKey"</code>
             <span>:</span>
             <code className="code-yellow"> "abs1nxxxxx"</code>
             <br />
           </p>
-
-          <h3 className="text-white  p-3">Response:</h3>
-          <h5 className="text-white ">Success Response : </h5>
-          <p className="output  text-white ">
-            <br /> <code>"status"</code> <span>: </span>
-            <code className="code-cyan">"200"</code>
-            <br /> <code>"success"</code> <span>: </span>
-            <code className="code-cyan">"true"</code>
-            <br /> <code>"message"</code> <span>: </span>
-            <code className="code-yellow">"Sendmoney Success"</code>
-            <br /> <code>"responseCode"</code> <span>: </span>
-            <code className="code-cyan">1</code>
-            <br /> <code>"data"</code>
-            <p className="output-two  text-white">
-              <br />
-              <code>"statusCode"</code> <span>: </span>
-              <code className="code-yellow">0</code>
-              <br />
-              <code>"transactionId"</code> <span>: </span>
-              <code className="code-yellow">"I22313011897"</code>
-              <br />
-              <code>"amount"</code> <span>: </span>
-              <code className="code-yellow">200.0</code>
-              <br />
-              <code>"utrNumber"</code> <span>: </span>
-              <code className="code-yellow">"927019161118"</code>
-              <br />
-            </p>
-          </p>
-          <h5 className="text-white  p-3">Send money failed response:</h5>
-          <p className="output text-white ">
-            <br /> <code>"status"</code> <span>: </span>
-            <code className="code-cyan">"400"</code>
-            <br /> <code>"success"</code> <span>: </span>
-            <code className="code-cyan"> "false"</code>
-            <br /> <code>"message"</code> <span>: </span>
-            <code className="code-yellow">"Sendmoney Failed"</code>
-            <br /> <code>"responseCode"</code> <span>: </span>
-            <code className="code-cyan"> 0</code>
-            <br /> <code>"data"</code>
-            <p className="output-two text-white">
-              <br />
-              <code>"statusCode"</code> <span>: </span>
-              <code className="code-yellow">0</code>
-              <br />
-              <code>"transactionId"</code> <span>: </span>
-              <code className="code-yellow">"I22313011919"</code>
-              <br />
-              <code>"amount"</code> <span>: </span>
-              <code className="code-yellow">200.0</code>
-              <br />
-              <code>"utrNumber" </code>
-              <span>: </span>
-              <code className="code-yellow">"927019161118"</code>
-            </p>
-          </p>
-          <h5 className="text-white p-3">Send money processing response:</h5>
-          <p className="output text-white ">
-            <br /> <code>"status"</code> <span>: </span>
-            <code className="code-cyan">"201"</code>
-            <br /> <code>"success"</code> <span>: </span>
-            <code className="code-cyan">"true"</code>
-            <br /> <code>"message"</code> <span>: </span>
-            <code className="code-yellow">"Sendmoney processing"</code>
-            <br /> <code>"responseCode"</code> <span>: </span>
-            <code className="code-cyan">2</code>
-            <br /> <code>"data"</code>
-            <p className="output-two text-white">
-              <br />
-              <code>"statusCode"</code> <span>: </span>
-              <code className="code-cyan">0</code>
-              <br />
-              <code>"transactionId"</code> <span>: </span>
-              <code className="code-cyan">"I22313011920"</code>
-              <br />
-              <code>"amount"</code> <span>: </span>
-              <code className="code-cyan">200.0</code>
-              <br />
-              <code>"utrNumber"</code> <span>: </span>
-              <code className="code-cyan">"927019161118"</code>
-              <br />
-            </p>
-          </p>
+        </Row>
+      </Col>
+      <Col id="style-1" className="col-12 col-sm-6 sideMenuColor scrollbar">
+        <Row id="style-1" className="border border-2 rounded-3">
+          <Tabs defaultActiveKey="python" className="tab ">
+            <Tab eventKey="Response" title="response" className="text-white">
+              <Sendmoney1code />
+            </Tab>
+            <Tab eventKey="python" title="python">
+              <Python />
+            </Tab>
+            <Tab eventKey="java" title="java">
+              <Java />
+            </Tab>
+            <Tab eventKey="shell" title="shell">
+              <Shell />
+            </Tab>
+            <Tab eventKey="PHP" title="PHP">
+              <Php />
+            </Tab>
+          </Tabs>
         </Row>
       </Col>
     </>

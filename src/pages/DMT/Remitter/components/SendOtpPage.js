@@ -1,12 +1,14 @@
 import React from "react";
-import { Row, Col, Table } from "react-bootstrap";
-import SendOtpCode from "./subcomponents/SendOtpCode";
+import { Row, Col, Table, Tab ,Tabs} from "react-bootstrap";
+import Bar from "../../../SideBar/Bar";
+import {Java, Node, Php, Python, Shell } from "./subcomponents/SendOtpCode";
 
 function SendOtpPage() {
   return (
     <>
-      <Col className="col-12 col-sm-6 maxheight700">
-        <Row id="sendotp">
+      <Col className="col-12 col-sm-6">
+        <Bar />
+        <Row>
           <h2 className="mb-0 mt-0 heading2">Remitter Send OTP</h2>
           <p className="px-4  mb-0 backroundP-tag">
             As mentioned in Remitter Information API, if a remitter is not found
@@ -50,12 +52,46 @@ function SendOtpPage() {
               </tbody>
             </Table>
           </span>
+          <h3 className="text-secondary">URL:</h3>
+        <code className="text-info">
+          http://194.195.113.218:8090/paymento/remitter-reg/send-otp
+        </code>
+        <h3 className="text-secondary">Method:</h3>
+        <p className=" text-secondary">POST</p>
+
+        <h3 className="text-secondary  p-3">Header:</h3>
+        <p className="output  ">
+          <br /> <code>"apiKey"</code>
+          <span>:</span>
+          <code className="code-yellow">"abs1nxxxxx"</code>
+          <br />
+        </p>
+
+        <h3 className="text-secondary">Request:</h3>
+        <p className="output">
+          <br /> <code>"remitterPhone"</code>
+          <span>:</span>
+          <code className="code-cyan">"7902900295"</code>
+          <br />
+          <code>"remitterName"</code>
+          <span>:</span>
+          <code className="code-yellow">"anu"</code>
+          <br />
+        </p>
         </Row>
       </Col>
       <Col
         id="style-1"
-        className="col-12 col-sm-6 zindex  scrollbar maxheight700 bg-dark">
-        <SendOtpCode />
+        className="col-12 col-sm-6 sideMenuColor">
+           <Row id="style-1" className="border border-2 rounded-3">
+        <Tabs defaultActiveKey="python" className="tab ">
+          <Tab eventKey="python" title="python"><Python /></Tab>
+          <Tab eventKey="java" title="java"><Java /></Tab>
+          <Tab eventKey="shell" title="shell"><Shell /></Tab>
+          <Tab eventKey="node" title="node"><Node /></Tab>
+          <Tab eventKey="php" title="php"><Php /></Tab>
+        </Tabs>
+      </Row>
       </Col>
     </>
   );

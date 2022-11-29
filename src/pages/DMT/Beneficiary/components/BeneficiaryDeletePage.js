@@ -1,10 +1,12 @@
 import React from "react";
 import { Col, Row, Table } from "react-bootstrap";
+import Bar from "../../../SideBar/Bar";
 
 function BeneficiaryDeletePage() {
   return (
     <>
-      <Col className="col-12 col-sm-6 maxheight500">
+      <Col className="col-12 col-sm-6">
+        <Bar />
         <Row id="beneficiarydelete">
           <h2 className="mb-0 mt-0 heading2">Delete Beneficiary</h2>
           <p className="px-4 mb-0 backroundP-tag">

@@ -4,7 +4,7 @@ import { Col, Row, Table } from "react-bootstrap";
 function BeneficiaryRegister() {
   return (
     <>
-      <Col className="col-12 col-sm-6 maxheight700">
+      <Col className="col-12 col-sm-6">
         <Row id="beneficiarycreate">
           <h2 className="mb-0 mt-0 heading2">Register Beneficiary</h2>
           <p className="px-4  mb-0 backroundP-tag">
@@ -75,8 +75,7 @@ function BeneficiaryRegister() {
       </Col>
       <Col
         id="style-1"
-        className="col-12 col-sm-6 zindex scrollbar bg-dark maxheight700"
-      >
+        className="col-12 col-sm-6 zindex scrollbar bg-dark">
         <Row className="codebg">
           <h3 className="text-white codehead p-3">URL:</h3>
           <code className="text-white pt-5 pb-5">

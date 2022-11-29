@@ -6,7 +6,7 @@ function Remitter() {
   return (
     <>
       <Col className="col-12 col-sm-6">
-        <Row id="remitter">
+        <Row>
           <Bar />
           <h1 className="heading mb-0">Remitter</h1>
           <p className="px-4  mb-0 backroundP-tag">
@@ -18,16 +18,7 @@ function Remitter() {
           </p>
         </Row>
       </Col>
-      <Col className="col-12 col-sm-6 sideMenuColor">
-        <Row className="d-none d-sm-block">
-          <Col className="bg-dark text-white">
-            <span className="border px-3 mx-2 bg-secondary">shell</span>
-            <span className="border px-3 bg-secondary">ruby</span>
-            <span className="border px-3 mx-2 bg-secondary">python</span>
-            <span className="border px-3 bg-secondary">java</span>
-          </Col>
-        </Row>
-      </Col>
+      <Col className="col-12 col-sm-6 sideMenuColor position-relative"></Col>
     </>
   );
 }

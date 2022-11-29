@@ -1,12 +1,13 @@
 import React from "react";
 import { Row, Col, Table } from "react-bootstrap";
+import Bar from "../../../SideBar/Bar";
 import RemitterBalanceCode from "./subcomponents/RemitterBalanceCode";
 
 function RemitterBalancePage() {
   return (
     <>
-      <Col className="col-12 col-sm-6 maxheight700">
-        <Row id="remitterbalance">
+      <Col className="col-12 col-sm-6">
+        <Row>
           <h2 className="mb-0 mt-0 heading2">Get Remitter Balance</h2>
           <p className="px-4  mb-0 backroundP-tag">
             This Api is used to fetch the balance of the registered remitter
@@ -22,6 +23,7 @@ function RemitterBalancePage() {
             2.For non-KYC customer - Rs 25,000 per customer per month
           </p>
           <span className="m my-5">
+            <Bar />
             <Table bordered>
               <thead>
                 <tr>
@@ -45,7 +47,7 @@ function RemitterBalancePage() {
       </Col>
       <Col
         id="style-1"
-        className="col-12 col-sm-6 zindex  scrollbar bg-dark maxheight700"
+        className="col-12 col-sm-6 zindex  scrollbar bg-dark"
       >
         <RemitterBalanceCode />
       </Col>

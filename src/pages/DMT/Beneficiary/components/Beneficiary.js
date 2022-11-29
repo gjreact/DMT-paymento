@@ -1,10 +1,12 @@
 import React from "react";
 import {Row ,Col} from "react-bootstrap"
+import Bar from "../../../SideBar/Bar";
 
 function Beneficiary() {
   return (
     <>
       <Col className="col-12 col-sm-6">
+        <Bar />
         <Row id="beneficiary">
           <h1 className="heading mb-0">Beneficiary</h1>
           <p className="px-4 mb-0 backroundP-tag">

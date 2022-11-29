@@ -1,10 +1,12 @@
 import React from "react";
 import { Col, Row, Table } from "react-bootstrap";
+import Bar from "../../../SideBar/Bar";
 
 function BeneficiaryListPage() {
   return (
     <>
-      <Col className="col-12 col-sm-6 maxheight500">
+      <Col className="col-12 col-sm-6">
+        <Bar />
         <Row id="beneficiarylist">
           <h2 className="mb-0 mt-0 heading2">List Beneficiary</h2>
           <p className="px-4  mb-0 backroundP-tag">
@@ -34,7 +36,7 @@ function BeneficiaryListPage() {
       </Col>
       <Col
         id="style-1"
-        className="col-12 col-sm-6 zindex scrollbar maxheight500 bg-dark"
+        className="col-12 col-sm-6 zindex scrollbar bg-dark"
       >
         <Row className="codebg">
           <h3 className="text-white codehead p-3">URL:</h3>

@@ -1,12 +1,14 @@
 import React from "react";
 import { Row, Col, Table } from "react-bootstrap";
+import Bar from "../../../SideBar/Bar";
 import VerifyOtpCode from "./subcomponents/VerifyOtpCode";
 
 function VerifyOtpPage() {
   return (
     <>
-      <Col className="col-12 col-sm-6 maxheight700">
-        <Row id="remitterverify">
+      <Col className="col-12 col-sm-6">
+        <Bar />
+        <Row>
           <h2 className="mb-0 mt-0 heading2">Verify Remitter OTP</h2>
           <p className="px-4  mb-0 backroundP-tag">
             As mentioned in Remitter information, if a remitter is not found
@@ -46,7 +48,8 @@ function VerifyOtpPage() {
       </Col>
       <Col
         id="style-1"
-        className="col-12 col-sm-6 zindex  scrollbar maxheight700 bg-dark ">
+        className="col-12 col-sm-6 zindex  scrollbar bg-dark "
+      >
         <VerifyOtpCode />
       </Col>
     </>

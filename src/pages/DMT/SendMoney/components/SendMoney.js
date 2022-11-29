@@ -5,7 +5,7 @@ function SendMoney() {
   return (
     <>
       <Col className="col-12 col-sm-6">
-        <Row id="sendmoney">
+        <Row>
           <h1 className="heading mb-0">Send Money</h1>
           <p className="px-4 mb-0 backroundP-tag">
             Initiate a Money Transfer transaction to a bank account via

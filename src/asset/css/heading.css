@@ -24,3 +24,7 @@
   background-color:var(--paragraphBackground);
   padding:20px;
 }
+
+.authparagraph{
+  background: whitesmoke;
+}
