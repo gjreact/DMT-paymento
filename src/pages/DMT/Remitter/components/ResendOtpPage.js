@@ -51,6 +51,28 @@ function ResendOtpPage() {
               </tbody>
             </Table>
           </span>
+          <h3 className="text-secondary">URL:</h3>
+         <code className="text-info">
+           http://194.195.113.218:8090/paymento/remitter-reg/resend-otp
+         </code>
+         <h3 className="text-secondary ">Method:</h3>
+         <p className=" text-secondary">POST</p>
+
+         <h3 className="text-white  ">Header:</h3>
+        <p className="output text-white ">
+           <br /> <code>"apiKey"</code>
+           <span>:</span>
+          <code className="code-yellow"> "abs1nxxxxx"</code>
+           <br />
+         </p>
+
+         <h3 className="text-secondary  p-3">Request:</h3>
+         <p className="output  text-white ">
+           <br /> <code>"remitterPhone"</code>
+           <span>:</span>
+           <code className="code-yellow">"7902626443"</code>
+         <br />
+        </p>
         </Row>
       </Col>
       <Col className="col-12 col-sm-6 sideMenuColor" >
