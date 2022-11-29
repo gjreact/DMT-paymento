@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row, Tab, Table, Tabs } from "react-bootstrap";
-import { Java, Node, Php, Python, Shell } from "./subcomponents/BeneficiaryRegisterCode";
+import { Java, Php, Python, Shell } from "./subcomponents/BeneficiaryRegisterCode";
 
 function BeneficiaryRegister() {
   return (
@@ -126,7 +126,6 @@ function BeneficiaryRegister() {
           <Tab eventKey="python" title="python"><Python /></Tab>
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
-          <Tab eventKey="node" title="node"><Node /></Tab>
           <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>

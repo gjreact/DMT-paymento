@@ -8,112 +8,111 @@ const copyToClipboard = (id) => {
   copy(c);
 };
 
-export function Sendmoney1code() {
-  return (
-    <>
-      <Row className="codebg">
-      <div className="copyclip" >
-          <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("s")} />
-      </div>
-      <p id="s">
-        <h3 className="text-white  p-3">Response:</h3>
-        <h5 className="text-white ">Success Response : </h5>
-        <p className="output  text-white ">
-          <br /> <code>"status"</code> <span>: </span>
-          <code className="code-cyan">"200"</code>
-          <br /> <code>"success"</code> <span>: </span>
-          <code className="code-cyan">"true"</code>
-          <br /> <code>"message"</code> <span>: </span>
-          <code className="code-yellow">"Sendmoney Success"</code>
-          <br /> <code>"responseCode"</code> <span>: </span>
-          <code className="code-cyan">1</code>
-          <br /> <code>"data"</code>
-          <p className="output-two  text-white">
-            <br />
-            <code>"statusCode"</code> <span>: </span>
-            <code className="code-yellow">0</code>
-            <br />
-            <code>"transactionId"</code> <span>: </span>
-            <code className="code-yellow">"I22313011897"</code>
-            <br />
-            <code>"amount"</code> <span>: </span>
-            <code className="code-yellow">200.0</code>
-            <br />
-            <code>"utrNumber"</code> <span>: </span>
-            <code className="code-yellow">"927019161118"</code>
-            <br />
-          </p>
-        </p>
-        <h5 className="text-white  p-3">Send money failed response:</h5>
-        <p className="output text-white ">
-          <br /> <code>"status"</code> <span>: </span>
-          <code className="code-cyan">"400"</code>
-          <br /> <code>"success"</code> <span>: </span>
-          <code className="code-cyan"> "false"</code>
-          <br /> <code>"message"</code> <span>: </span>
-          <code className="code-yellow">"Sendmoney Failed"</code>
-          <br /> <code>"responseCode"</code> <span>: </span>
-          <code className="code-cyan"> 0</code>
-          <br /> <code>"data"</code>
-          <p className="output-two text-white">
-            <br />
-            <code>"statusCode"</code> <span>: </span>
-            <code className="code-yellow">0</code>
-            <br />
-            <code>"transactionId"</code> <span>: </span>
-            <code className="code-yellow">"I22313011919"</code>
-            <br />
-            <code>"amount"</code> <span>: </span>
-            <code className="code-yellow">200.0</code>
-            <br />
-            <code>"utrNumber" </code>
-            <span>: </span>
-            <code className="code-yellow">"927019161118"</code>
-          </p>
-        </p>
-        <h5 className="text-white p-3">Send money processing response:</h5>
-        <p className="output text-white ">
-          <br /> <code>"status"</code> <span>: </span>
-          <code className="code-cyan">"201"</code>
-          <br /> <code>"success"</code> <span>: </span>
-          <code className="code-cyan">"true"</code>
-          <br /> <code>"message"</code> <span>: </span>
-          <code className="code-yellow">"Sendmoney processing"</code>
-          <br /> <code>"responseCode"</code> <span>: </span>
-          <code className="code-cyan">2</code>
-          <br /> <code>"data"</code>
-          <p className="output-two text-white">
-            <br />
-            <code>"statusCode"</code> <span>: </span>
-            <code className="code-cyan">0</code>
-            <br />
-            <code>"transactionId"</code> <span>: </span>
-            <code className="code-cyan">"I22313011920"</code>
-            <br />
-            <code>"amount"</code> <span>: </span>
-            <code className="code-cyan">200.0</code>
-            <br />
-            <code>"utrNumber"</code> <span>: </span>
-            <code className="code-cyan">"927019161118"</code>
-            <br />
-          </p>
-        </p>
-        </p>
-      </Row>
-    </>
-  );
-}
+// export function Sendmoney1code() {
+//   return (
+//     <>
+//       <Row className="codebg">
+//       <div className="copyclip" >
+//           <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("s")} />
+//       </div>
+//       <p id="s">
+//         <h3 className="text-white  p-3">Response:</h3>
+//         <h5 className="text-white ">Success Response : </h5>
+//         <p className="output  text-white ">
+//           <br /> <code>"status"</code> <span>: </span>
+//           <code className="code-cyan">"200"</code>
+//           <br /> <code>"success"</code> <span>: </span>
+//           <code className="code-cyan">"true"</code>
+//           <br /> <code>"message"</code> <span>: </span>
+//           <code className="code-yellow">"Sendmoney Success"</code>
+//           <br /> <code>"responseCode"</code> <span>: </span>
+//           <code className="code-cyan">1</code>
+//           <br /> <code>"data"</code>
+//           <p className="output-two  text-white">
+//             <br />
+//             <code>"statusCode"</code> <span>: </span>
+//             <code className="code-yellow">0</code>
+//             <br />
+//             <code>"transactionId"</code> <span>: </span>
+//             <code className="code-yellow">"I22313011897"</code>
+//             <br />
+//             <code>"amount"</code> <span>: </span>
+//             <code className="code-yellow">200.0</code>
+//             <br />
+//             <code>"utrNumber"</code> <span>: </span>
+//             <code className="code-yellow">"927019161118"</code>
+//             <br />
+//           </p>
+//         </p>
+//         <h5 className="text-white  p-3">Send money failed response:</h5>
+//         <p className="output text-white ">
+//           <br /> <code>"status"</code> <span>: </span>
+//           <code className="code-cyan">"400"</code>
+//           <br /> <code>"success"</code> <span>: </span>
+//           <code className="code-cyan"> "false"</code>
+//           <br /> <code>"message"</code> <span>: </span>
+//           <code className="code-yellow">"Sendmoney Failed"</code>
+//           <br /> <code>"responseCode"</code> <span>: </span>
+//           <code className="code-cyan"> 0</code>
+//           <br /> <code>"data"</code>
+//           <p className="output-two text-white">
+//             <br />
+//             <code>"statusCode"</code> <span>: </span>
+//             <code className="code-yellow">0</code>
+//             <br />
+//             <code>"transactionId"</code> <span>: </span>
+//             <code className="code-yellow">"I22313011919"</code>
+//             <br />
+//             <code>"amount"</code> <span>: </span>
+//             <code className="code-yellow">200.0</code>
+//             <br />
+//             <code>"utrNumber" </code>
+//             <span>: </span>
+//             <code className="code-yellow">"927019161118"</code>
+//           </p>
+//         </p>
+//         <h5 className="text-white p-3">Send money processing response:</h5>
+//         <p className="output text-white ">
+//           <br /> <code>"status"</code> <span>: </span>
+//           <code className="code-cyan">"201"</code>
+//           <br /> <code>"success"</code> <span>: </span>
+//           <code className="code-cyan">"true"</code>
+//           <br /> <code>"message"</code> <span>: </span>
+//           <code className="code-yellow">"Sendmoney processing"</code>
+//           <br /> <code>"responseCode"</code> <span>: </span>
+//           <code className="code-cyan">2</code>
+//           <br /> <code>"data"</code>
+//           <p className="output-two text-white">
+//             <br />
+//             <code>"statusCode"</code> <span>: </span>
+//             <code className="code-cyan">0</code>
+//             <br />
+//             <code>"transactionId"</code> <span>: </span>
+//             <code className="code-cyan">"I22313011920"</code>
+//             <br />
+//             <code>"amount"</code> <span>: </span>
+//             <code className="code-cyan">200.0</code>
+//             <br />
+//             <code>"utrNumber"</code> <span>: </span>
+//             <code className="code-cyan">"927019161118"</code>
+//             <br />
+//           </p>
+//         </p>
+//         </p>
+//       </Row>
+//     </>
+//   );
+// }
 
 export function Python() {
   return (
     <>
       <Row className="codebg">
       <div className="copyclip" >
-          <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("p")} />
+          <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("python")} />
       </div>
-      <p id="p">
-        <p>Python - Requests</p>
-        <br /> <code>import</code> <code className="text-white">requests</code>
+      <p id="python">
+      <br /> <code>import</code> <code className="text-white">requests</code>
         <br /> <code>import</code> <code className="text-white">json</code>
         <br />
         <code className="text-white"> url =</code>{" "}
@@ -165,9 +164,9 @@ export function Java() {
     <>
       <Row className="codebg">
       <div className="copyclip" >
-          <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("j")} />
+          <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("java")} />
       </div>
-      <p id="j">
+      <p id="java">
         <br />
         <code className="text-white">
           OkHttpClient client = <code>new</code> OkHttpClient().newnewBuilder()
@@ -211,7 +210,7 @@ export function Java() {
         <code className="text-white">
           .addHeader(<code className="code-yellow">"apiKey"</code>,{" "}
           <code className="code-yellow">
-            "lScaZNyjCrMrTq1AeTWFK9zEEnlMl9No"
+            "apikey"
           </code>
           )
         </code>
@@ -242,9 +241,7 @@ export function Shell() {
           <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("shell")} />
       </div>
       <p id="shell">
-        <p>shell</p>
-        <br />{" "}
-        <code className="text-white">
+      <code className="text-white">
           wget --no-check-certificate --quiet \
         </code>
         <br /> <code className="text-white">--method POST \</code>
@@ -255,7 +252,7 @@ export function Shell() {
           --header{" "}
           <code className="code-yellow">
             {" "}
-            'apiKey: lScaZNyjCrMrTq1AeTWFK9zEEnlMl9No' \
+            'apiKey': "apiKey" \
           </code>
         </code>
         <br />{" "}
@@ -298,8 +295,7 @@ export function Php() {
           <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("php")} />
       </div>
       <p id="php">
-        <h2>php curl</h2>
-        <br /> <code className="text-white">$curl = curl_init();</code>
+      <br /> <code className="text-white">$curl = curl_init();</code>
         <br />
         <code className="text-white">
           curl_setopt_array($curl, <code>array</code>(
@@ -345,7 +341,7 @@ export function Php() {
         <code className="text-white"> CURLOPT_POSTFIELDS =&#62;</code>
         <code className="code-yellow">
           {" "}
-          '
+          '<br/>
           <code className="output code-yellow">
             <br />
             "beneficiaryId":36,
@@ -355,12 +351,13 @@ export function Php() {
             "Amount":200
             <br />
           </code>
+          
           <br />
           ' ,<br />
           <code className="text-white">
             CURLOPT_HTTPHEADER =&#62; <code>array</code> ( <br />
             <code className="code-yellow">
-              'apiKey: lScaZNyjCrMrTq1AeTWFK9zEEnlMl9No', <br />
+              'apiKey': "apiKey", <br />
               'Content-Type: application/json'
             </code>
             <br />

@@ -128,24 +128,6 @@ export function Shell(){
   )
 }
 
-export function Node(){
-  return(
-    <>
-     <Row className="codebg">
-      <div className="copyclip" >
-          <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("node")} />
-      </div>
-      <p id="node">
-
-
-      </p>
-    </Row>
-    
-    </>
-  )
-}
-
-
 export function Php(){
   return(
     <>
@@ -162,3 +144,22 @@ export function Php(){
     </>
   )
 }
+
+
+
+// export function Node(){
+//   return(
+//     <>
+//      <Row className="codebg">
+//       <div className="copyclip" >
+//           <AiOutlineCopy className="copyicon" onClick={()=>copyToClipboard("node")} />
+//       </div>
+//       <p id="node">
+
+
+//       </p>
+//     </Row>
+    
+//     </>
+//   )
+// }

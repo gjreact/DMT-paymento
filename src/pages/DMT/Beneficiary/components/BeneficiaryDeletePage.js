@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Tab, Table, Tabs } from "react-bootstrap";
 import Bar from "../../../SideBar/Bar";
-import { Java, Node, Php, Python, Shell } from "./subcomponents/BeneficiaryDeleteCode";
+import { Java, Php, Python, Shell } from "./subcomponents/BeneficiaryDeleteCode";
 
 function BeneficiaryDeletePage() {
   return (
@@ -34,6 +34,29 @@ function BeneficiaryDeletePage() {
               </tbody>
             </Table>
           </span>
+          <h4 className="text-secondary">URL:</h4>
+        <code className="text-info">
+          http://194.195.113.218:8090/paymento/remitter-reg/delete-beneficiary
+        </code>
+        <h3 className="text-secondary pt-2">Method:</h3>
+        <p className="text-secondary">POST</p>
+
+        <h3 className="text-secondary">Header:</h3>
+        <p className="output" ><br /> <code>"apiKey"</code>
+          <span>
+            :
+          </span>
+          <code className="code-yellow">"abs1nxxxxx"</code><br />
+        </p>
+
+        <h3 className="text-secondary">Request:</h3>
+        <p className="output" ><br /> <code>"remitterPhone"</code>
+          <span>
+            :
+          </span>
+          <code className="code-cyan"> "7902626443"</code><br />
+
+        </p>
         </Row>
       </Col>
       <Col className="col-12 col-sm-6 sideMenuColor ">
@@ -42,7 +65,6 @@ function BeneficiaryDeletePage() {
           <Tab eventKey="python" title="python"><Python /></Tab>
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
-          <Tab eventKey="node" title="node"><Node /></Tab>
           <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>

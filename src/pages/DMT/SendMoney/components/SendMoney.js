@@ -1,10 +1,12 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import Bar from "../../../SideBar/Bar";
 
 function SendMoney() {
   return (
     <>
       <Col className="col-12 col-sm-6">
+        <Bar />
         <Row>
           <h1 className="heading mb-0">Send Money</h1>
           <p className="px-4 mb-0 backroundP-tag">

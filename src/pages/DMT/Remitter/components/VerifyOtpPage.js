@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Table, Tab, Tabs } from "react-bootstrap";
 import Bar from "../../../SideBar/Bar";
-import  { Java, Node, Php, Python, Shell } from "./subcomponents/VerifyOtpCode";
+import  { Java, Php, Python, Shell } from "./subcomponents/VerifyOtpCode";
 
 function VerifyOtpPage() {
   return (
@@ -80,7 +80,6 @@ function VerifyOtpPage() {
           <Tab eventKey="python" title="python"><Python /></Tab>
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
-          <Tab eventKey="node" title="node"><Node /></Tab>
           <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>

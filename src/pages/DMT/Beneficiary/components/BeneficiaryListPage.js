@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Tab, Table, Tabs } from "react-bootstrap";
 import Bar from "../../../SideBar/Bar";
-import { Java, Node, Php, Python, Shell } from "./subcomponents/BeneficiaryListCode";
+import { Java,Php, Python, Shell } from "./subcomponents/BeneficiaryListCode";
 
 function BeneficiaryListPage() {
   return (
@@ -33,6 +33,24 @@ function BeneficiaryListPage() {
               </tbody>
             </Table>
           </span>
+          <h4 className="text-secondary">URL:</h4>
+        <code className="text-info">
+          http://194.195.113.218:8090/paymento/remitter-reg/getbeneficiary</code>
+        <h4 className="text-secondary">Method:</h4>
+        <p className="text-secondary">POST</p>
+
+        <h4 className="text-secondary">Header:</h4>
+        <p className="output" ><br /> <code>"apiKey"</code>
+          <span>
+            :
+          </span>
+          <code className="code-yellow">abs1nxxxxx"</code>"<br />
+        </p>
+
+        <h4 className=" text-secondary">Request:</h4>
+        <p className="output" ><br />
+          <code>"remitterid"</code>  <span>: </span> <code className="code-yellow">""</code>   <br />
+        </p>
         </Row>
       </Col>
       <Col className="col-12 col-sm-6 sideMenuColor ">
@@ -41,7 +59,6 @@ function BeneficiaryListPage() {
           <Tab eventKey="python" title="python"><Python /></Tab>
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
-          <Tab eventKey="node" title="node"><Node /></Tab>
           <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>

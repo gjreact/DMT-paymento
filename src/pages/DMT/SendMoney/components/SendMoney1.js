@@ -4,7 +4,6 @@ import {
   Java,
   Php,
   Python,
-  Sendmoney1code,
   Shell,
 } from "./subcomponents/Sendmoney1code";
 
@@ -71,7 +70,7 @@ function SendMoney1() {
           </code>
 
           <h3 className="text-secondary p-3">Request:</h3>
-          <p className="output  text-white ">
+          <p className="output ">
             <br /> <code>"beneficiaryId"</code> <span>: </span>
             <code className="code-cyan">36</code>
             <br /> <code>"remitterId"</code> <span>: </span>
@@ -82,7 +81,7 @@ function SendMoney1() {
           </p>
 
           <h3 className="text-secondary  p-3">Header:</h3>
-          <p className="output  text-white ">
+          <p className="output">
             <br /> <code>"apiKey"</code>
             <span>:</span>
             <code className="code-yellow"> "abs1nxxxxx"</code>
@@ -93,9 +92,6 @@ function SendMoney1() {
       <Col id="style-1" className="col-12 col-sm-6 sideMenuColor scrollbar">
         <Row id="style-1" className="border border-2 rounded-3">
           <Tabs defaultActiveKey="python" className="tab ">
-            <Tab eventKey="Response" title="response" className="text-white">
-              <Sendmoney1code />
-            </Tab>
             <Tab eventKey="python" title="python">
               <Python />
             </Tab>

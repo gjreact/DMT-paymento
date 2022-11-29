@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Table, Tab ,Tabs } from "react-bootstrap";
 import Bar from "../../../SideBar/Bar";
-import  { Java, Node, Php, Python, Shell } from "./subcomponents/ResendOtpCode";
+import  { Java,Php, Python, Shell } from "./subcomponents/ResendOtpCode";
 
 function ResendOtpPage() {
   return (
@@ -59,7 +59,7 @@ function ResendOtpPage() {
          <p className=" text-secondary">POST</p>
 
          <h3 className="text-secondary  ">Header:</h3>
-        <p className="output text-white ">
+        <p className="output">
            <br /> <code>"apiKey"</code>
            <span>:</span>
           <code className="code-yellow"> "abs1nxxxxx"</code>
@@ -67,7 +67,7 @@ function ResendOtpPage() {
          </p>
 
          <h3 className="text-secondary  p-3">Request:</h3>
-         <p className="output  text-white ">
+         <p className="output">
            <br /> <code>"remitterPhone"</code>
            <span>:</span>
            <code className="code-yellow">"7902626443"</code>
@@ -81,7 +81,6 @@ function ResendOtpPage() {
           <Tab eventKey="python" title="python"><Python /></Tab>
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
-          <Tab eventKey="node" title="node"><Node /></Tab>
           <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>

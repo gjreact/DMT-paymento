@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Table, Tabs, Tab } from "react-bootstrap";
 import "../../../../asset/css/code.css";
-import {Python, Java, Shell, Node, Php} from "./subcomponents/RemitterinfoCode";
+import {Python, Java, Shell, Php} from "./subcomponents/RemitterinfoCode";
 
 function RemitterInfoPage() {
   return (
@@ -40,7 +40,7 @@ function RemitterInfoPage() {
           </code>
 
           <h5 className="text-secondary ">Request:</h5>
-          <p className="output  text-white">
+          <p className="output">
             <br /> <code> "remitterPhone"</code>
             <span>:</span>
             <span>"7902900295"</span>
@@ -48,7 +48,7 @@ function RemitterInfoPage() {
           </p>
 
           <h5 className="text-secondary  p-3">Header:</h5>
-          <p className="output  text-white ">
+          <p className="output ">
             <br /> <code>"apiKey"</code>
             <span>:</span>
             <code className="code-yellow"> "abs1nxxxxx"</code>
@@ -62,7 +62,6 @@ function RemitterInfoPage() {
           <Tab eventKey="python" title="python"><Python /></Tab>
           <Tab eventKey="java" title="java"><Java /></Tab>
           <Tab eventKey="shell" title="shell"><Shell /></Tab>
-          <Tab eventKey="node" title="node"><Node /></Tab>
           <Tab eventKey="php" title="php"><Php /></Tab>
         </Tabs>
       </Row>
